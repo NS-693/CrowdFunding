@@ -1,0 +1,56 @@
+.navigation {
+	@include clearfix;
+	position: relative;
+
+	&__logo {
+		height: 6rem;
+		padding: 0.5rem;
+		margin-left: 2rem;
+		margin-top: 0.6rem;
+	}
+
+	&__button {
+		float: right;
+		padding: 1rem;
+		margin-right: 3rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__nav {
+		float: right;
+		padding: 2rem;
+		margin-right: 20rem;
+
+		&:first-child {
+			color: $color-blue;
+		}
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		font-size: $font-size-small-1;
+		font-weight: 600;
+		display: inline-block;
+		margin-right: 3.2rem;
+	}
+
+	&__menu {
+		color: $color-blue;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $grey-text-3;
+		transition: all 0.2 ease;
+
+		&:hover,
+		&:active {
+			color: $color-blue;
+		}
+	}
+}

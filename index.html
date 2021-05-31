@@ -6,7 +6,9 @@
     
 
     <script src="https://kit.fontawesome.com/b92ead5a8d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
@@ -14,10 +16,44 @@
     
 </head>
 <body>
-    <header>
+   <header class="header">       
+           <img src="assets/logo1.png" class="navigation__logo" alt="logo">
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link "> <div class="navigation__menu">Home</div></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"> Explore </a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"> <i class="far fa-user icon icon__user"></i> Log In </a></li>
+                   
+                </ul>                
+            </nav> 
+            <div class="navigation__button">
+                <a href="#"><i class="fas fa-search icon icon__search"></i></a>
+                <a href="#" class="btn btn-p1 btn--small btn__white" >Start A Campaign</a>
+            </div>
+   </header>
 
-    </header>
     <main>
+        <section class="hero">
+            <div class="row hero__box">
+                <div class="col-1-of-2 hero__box--1">
+                    <h1 class="heading__primary">
+                        Best Crowd-Funding Website for your Startup.
+                    </h1>
+                    <p class="hero__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum quod facilis praesentium quaerat fuga voluptatum aliquam vitae, voluptate asperiores!
+                    </p>
+                    <div class="hero__button">
+                        <a href="#" class="u-margin-right-small btn btn__blue">Start A Campaign</a>
+                        <a href="#" class="btn btn--big btn__white">Sign In</a>
+                    </div>
+                    <a href="#" class="btn__text">How It Works <i class="fas fa-caret-right icon__arrow"></i></a>
+                </div>
+                <div class="col-1-of-2 hero__box--2">
+                    <img src="assets/hero.svg" class="hero__img" alt="hero image">                    
+                </div>
+            </div>
+   
+        </section>
 
     </main>
     <footer>

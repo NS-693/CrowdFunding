@@ -1,0 +1,23 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: $default-font-size;
+	line-height: 1.7;
+	color: $grey-text-1;
+
+	box-sizing: border-box;
+}
+
+.heading__primary {
+	font-weight: 600;
+	font-size: 4.6rem;
+	word-spacing: 0.2rem;
+	color: $grey-heading-1;
+	line-height: 6.2rem;
+	margin-top: 5.5rem;
+}
+
+.hero__paragraph {
+	font-size: 1.5rem;
+	color: $grey-text-1;
+}

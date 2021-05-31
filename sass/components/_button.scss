@@ -1,0 +1,67 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		display: inline-block;
+		text-decoration: none;
+		border: 1px solid rgba($color-blue, 0.4);
+		border-radius: 3px;
+	}
+
+	&--small {
+		font-size: $font-size-small;
+		font-weight: 700;
+		padding: 1.3rem 1.8rem;
+	}
+
+	&--big {
+		font-size: $default-font-size;
+		font-weight: 700;
+		padding: 0.8rem 2.6rem;
+	}
+
+	&__blue {
+		background-color: $color-blue;
+		color: $color-white-1;
+		font-weight: 800;
+		font-size: $default-font-size;
+		transition: all 0.2s ease;
+		padding: 0.8rem 2.6rem;
+
+		&:hover,
+		&:active {
+			background-color: $grey-heading-1;
+			box-shadow: 0 1rem 1rem rgba($color-blue, 0.2);
+		}
+	}
+
+	&__white {
+		background-color: $color-white-1;
+		color: $grey-text-4;
+		transition: all 0.2s ease;
+
+		&:hover,
+		&:active {
+			background-color: $color-blue;
+			color: $color-white-1;
+			box-shadow: 0 1rem 1rem rgba($color-blue, 0.2);
+		}
+	}
+}
+
+.btn__text {
+	&,
+	&:link,
+	&:visited {
+		font-size: $default-font-size;
+		font-weight: 500;
+		color: $color-blue;
+		text-decoration: none;
+		transition: all 0.2s ease;
+	}
+
+	&:hover,
+	&:active {
+		color: $grey-text-4;
+	}
+}
