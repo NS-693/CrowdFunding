@@ -22,10 +22,6 @@
 		float: right;
 		padding: 2rem;
 		margin-right: 20rem;
-
-		&:first-child {
-			color: $color-blue;
-		}
 	}
 
 	&__list {
@@ -39,14 +35,14 @@
 		margin-right: 3.2rem;
 	}
 
-	&__menu {
-		color: $color-blue;
-	}
-
 	&__link {
 		text-decoration: none;
 		color: $grey-text-3;
 		transition: all 0.2 ease;
+
+		&--active {
+			color: $color-blue;
+		}
 
 		&:hover,
 		&:active {
