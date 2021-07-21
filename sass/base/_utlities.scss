@@ -1,47 +1,66 @@
 //TOP Margins
-.u-margin-top-small {
-	margin-top: 2rem;
-}
+.umts {
+	margin-top: 2rem !important;
+} //margin top small
 
-.u-margin-top-medium {
-	margin-top: 4rem;
-}
+.umtm {
+	margin-top: 4rem !important;
+} //margin top medium
 
-.u-margin-top-big {
-	margin-top: 6rem;
-}
+.umtb {
+	margin-top: 6rem !important;
+} //margin top big
 
-.u-margin-top-huge {
-	margin-top: 8rem;
-}
+.umth {
+	margin-top: 8rem !important;
+} //margin top huge
 
-.u-margin-top-ehuge {
-	margin-top: 12rem;
-}
+.umte {
+	margin-top: 10rem !important;
+} //margin top enormous
+
+.umtx {
+	margin-top: 15rem !important;
+} //margin top extreme
 
 //BOTTOM MARGINS
-.u-margin-bottom-small {
-	margin-bottom: 2rem;
-}
+.umbs {
+	margin-bottom: 2rem !important;
+} //margin bottom small
 
-.u-margin-bottom-medium {
-	margin-bottom: 4rem;
-}
+.umbm {
+	margin-bottom: 4rem !important;
+} //margin bottom medium
 
-.u-margin-bottom-big {
-	margin-bottom: 6rem;
-}
+.umbb {
+	margin-bottom: 6rem !important;
+} //margin bottom big
 
-.u-margin-bottom-huge {
-	margin-bottom: 8rem;
-}
+.umbh {
+	margin-bottom: 8rem !important;
+} //margin bottom huge
+
+.umbe {
+	margin-bottom: 12rem !important;
+} //margin bottom enormous
 
 //RIGHT MARGINS
-.u-margin-right-small {
-	margin-right: 1rem;
-}
+.umrs {
+	margin-right: 1rem !important;
+} //margin right small
 
 //COLOR CLASS
 .u-color-blue {
-	color: $color-blue;
+	color: $color-blue !important;
+}
+
+//WIDTH
+.uwd1 {
+	width: 55%;
+}
+
+//POSITIONING
+
+.utca {
+	text-align: center;
 }

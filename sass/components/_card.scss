@@ -1,0 +1,163 @@
+.card {
+	$self: &;
+
+	&__headingpara {
+		width: 85%;
+	}
+
+	&__container {
+		border: 1px solid rgba($grey-text-2, 0.2);
+		border-radius: 5px;
+		overflow: hidden;
+		position: relative;
+
+		&:hover {
+			#{$self}__slider {
+				top: 20%;
+				visibility: visible;
+			}
+
+			#{$self}__image {
+				transform: translateY(-1rem);
+			}
+		}
+	}
+
+	&__tag {
+		font-size: $font-size-small;
+		font-weight: 700;
+		color: $grey-heading-3;
+		background-color: $color-white-1;
+
+		z-index: 1000;
+
+		padding: 2px 5px;
+		border-radius: 3px;
+
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+	}
+
+	&__image {
+		width: 100%;
+		transition: all 0.3s ease;
+	}
+
+	&__box {
+		padding: 2rem;
+	}
+
+	&__para {
+		color: $grey-text-2;
+
+		padding-top: 0.5rem;
+	}
+
+	&__counter {
+		font-size: 1.3rem;
+		font-weight: 600;
+		padding: 2rem 0;
+		margin-bottom: 1rem;
+
+		// @include clearfix;
+	}
+
+	&__funded {
+		float: left;
+	}
+
+	&__days {
+		float: right;
+	}
+
+	&__bold {
+		color: $grey-heading-2;
+		font-weight: 700;
+	}
+
+	&__percent {
+		height: 5px;
+		background-color: rgba($grey-text-2, 0.15);
+		border-radius: 2px;
+	}
+
+	&__percentage {
+		height: 5px;
+		border-radius: 2px;
+		background-color: $color-blue;
+
+		&--1 {
+			width: 73%;
+		}
+
+		&--2 {
+			width: 85%;
+		}
+		&--3 {
+			width: 89%;
+		}
+		&--4 {
+			width: 92%;
+		}
+		&--5 {
+			width: 100%;
+		}
+	}
+
+	//SLIDER//
+
+	&__slider {
+		padding: 2rem;
+		background-color: $color-white-1;
+		width: 100%;
+		visibility: hidden;
+		transition: all 0.3s ease;
+
+		position: absolute;
+		top: 48%;
+	}
+
+	&__city {
+		padding-top: 1rem;
+		color: $grey-text-3;
+	}
+
+	&__list {
+		list-style: none;
+		padding: 2rem 0;
+	}
+
+	&__item {
+		text-decoration: none;
+		padding: 5px 0;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba($grey-text-3, 0.2);
+		}
+	}
+
+	&__shape {
+		height: 5rem;
+		width: 5rem;
+		float: left;
+
+		shape-outside: circle(50% at 50% 50%);
+
+		clip-path: circle(50% at 50% 50%);
+	}
+
+	&__investor {
+		@include clearfix;
+	}
+
+	&__pic {
+		height: 100%;
+	}
+
+	&__name {
+		float: left;
+
+		padding: 1rem 0 0 1rem;
+	}
+}

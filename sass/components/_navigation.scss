@@ -1,44 +1,37 @@
 .navigation {
+	width: 100vw;
 	@include clearfix;
-	position: relative;
+	background-color: $color-white-1;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	border-bottom: 1px solid rgba($grey-text-2, 0.2);
+
+	z-index: 100000;
 
 	&__logo {
 		height: 6rem;
-		padding: 0.5rem;
-		margin-left: 2rem;
-		margin-top: 0.6rem;
-	}
-
-	&__button {
-		float: right;
-		padding: 1rem;
-		margin-right: 3rem;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-
-	&__nav {
-		float: right;
-		padding: 2rem;
-		margin-right: 20rem;
+		padding: 1rem 0 0 2rem;
 	}
 
 	&__list {
 		list-style: none;
+		float: right;
 	}
 
 	&__item {
-		font-size: $font-size-small-1;
-		font-weight: 600;
 		display: inline-block;
-		margin-right: 3.2rem;
+		padding: 2.1rem;
 	}
 
 	&__link {
 		text-decoration: none;
+		font-size: $font-size-small-1;
+		font-weight: 700;
 		color: $grey-text-3;
-		transition: all 0.2 ease;
+		transition: all 0.2s ease;
 
 		&--active {
 			color: $color-blue;
@@ -48,5 +41,11 @@
 		&:active {
 			color: $color-blue;
 		}
+	}
+
+	&__button {
+		float: right;
+		margin-right: 3rem;
+		padding: 1rem;
 	}
 }

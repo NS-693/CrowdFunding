@@ -1,25 +1,27 @@
 .icon {
-	display: inline-block;
-	transition: all 0.2s all;
-
-	&__user {
-		font-size: 1.3rem;
-		color: $grey-text-3;
-		margin-right: 0.5rem;
+	&__search {
+		margin-right: 1.5rem;
+		font-size: 2rem;
 	}
 
-	&__search {
-		font-size: $default-font-size;
-		color: $grey-text-3;
-		margin-right: 1rem;
+	&__user {
+		margin-right: 0.7rem;
+		font-size: 1.5rem;
 	}
 
 	&__arrow {
-		font-size: $default-font-size;
+		font-size: 1.5rem;
+		margin-left: 0.5rem;
 	}
 
-	&:hover,
-	&:active {
-		color: $color-blue;
+	&__apple {
+		background-color: $color-white-1;
+		border-radius: 2px;
+		padding: 2px;
+		height: 4rem;
+	}
+
+	&__map {
+		padding-right: 2rem;
 	}
 }
